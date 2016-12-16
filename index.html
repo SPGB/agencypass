@@ -55,7 +55,7 @@
                     <li>
                         <a class="page-scroll" href="#services">Services</a>
                     </li>
-                    <li>
+                    <li style="display:none;">
                         <a class="page-scroll" href="#portfolio">Portfolio</a>
                     </li>
                     <li>
@@ -73,8 +73,8 @@
             <div class="header-content-inner">
                 <h1 id="homeHeading">Agency Password Management</h1>
                 <hr>
-                <p>Password Zero makes logging into client accounts easy for you and the client. Just sign in, no strings attached!</p>
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+                <p>Password Zero makes managing secrets for you and your clients a breeze. Just sign in, no strings attached!</p>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll">Get Started</a>
             </div>
         </div>
     </header>
@@ -85,8 +85,8 @@
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">We've got what you need!</h2>
                     <hr class="light">
-                    <p class="text-faded">[About text will be hre]</p>
-                    <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Get Started!</a>
+                    <p class="text-faded">Password zero is a no-knowledge, open source password manager aimed at digital agencies. We provide easy tools to make credential management effortless.</p>
+                    <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Try it for free</a>
                 </div>
             </div>
         </div>
@@ -106,15 +106,15 @@
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
-                        <h3>Sturdy Templates</h3>
-                        <p class="text-muted">Our templates are updated regularly so they don't break.</p>
+                        <h3>Zero Knowledge</h3>
+                        <p class="text-muted">Only you have access to your passwords.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
-                        <h3>Ready to Ship</h3>
-                        <p class="text-muted">You can use this theme as is, or you can make changes!</p>
+                        <h3>Secure</h3>
+                        <p class="text-muted">Secrets are encrypted with 1024-bit encryption</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
@@ -127,15 +127,15 @@
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
-                        <h3>Made with Love</h3>
-                        <p class="text-muted">You have to make your websites with love these days!</p>
+                        <h3>Open Source</h3>
+                        <p class="text-muted">Our source code is freely available on Github</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="no-padding" id="portfolio">
+    <section class="no-padding" id="portfolio" style="display: none;">
         <div class="container-fluid">
             <div class="row no-gutter popup-gallery">
                 <div class="col-lg-4 col-sm-6">
@@ -260,6 +260,20 @@
             </div>
         </div>
     </section>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyB4oFKMzGB_CkV3wS8hSWwIGU326BfYqik",
+        authDomain: "passwordzero.firebaseapp.com",
+        databaseURL: "https://passwordzero.firebaseio.com",
+        storageBucket: "passwordzero.appspot.com",
+        messagingSenderId: "468289277339"
+      };
+      firebase.initializeApp(config);
+    </script>
 
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
